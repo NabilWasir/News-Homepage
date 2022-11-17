@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="sub-container">
+        <nav
+          class="navbar"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <img src="/assets/images/logo.svg" alt="" class="logo" />
+          <button class="hambergermenu" id="hambergermenu"></button>
+          <div class="nav-links">
+            <a href="" class="nav-link">Home</a>
+            <a href="" class="nav-link">New</a>
+            <a href="" class="nav-link">Popular</a>
+            <a href="" class="nav-link">Trending</a>
+            <a href="" class="nav-link">Categories</a>
+          </div>
+        </nav>
+        <section class="main-latest-news">
+          <section
+            class="main-headline"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1500"
+          >
+            <div class="main-headline_image"></div>
+            <div class="main-headline_text-button">
+              <h1 class="main-headline_heading">
+                The Bright Future of Web 3.0?
+              </h1>
+              <div>
+                <p class="main-headline_sub-heading">
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <button class="main-headline_button">Read more</button>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="latest-news"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1500"
+          >
+            <div class="latest-news_texts">
+              <h2 class="latest-news_main-heading">New</h2>
+              <div class="latest-news_heading-sub-heading">
+                <h3 class="latest-news_heading">Hydrogen VS Electric Cars</h3>
+                <p class="latest-news_sub-heading">
+                  Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+                <hr class="latest-news_line" />
+              </div>
+              <div class="latest-news_heading-sub-heading">
+                <h3 class="latest-news_heading">
+                  The Downsides of AI Artistry
+                </h3>
+                <p class="latest-news_sub-heading">
+                  What are the possible adverse effects of on-demand AI image
+                  generation?
+                </p>
+                <hr class="latest-news_line" />
+              </div>
+              <div class="latest-news_heading-sub-heading">
+                <h3 class="latest-news_heading">Is VC Funding Drying Up?</h3>
+                <p class="latest-news_sub-heading">
+                  Private funding by VC firms is down 50% YOY. We take a look at
+                  what that means.
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="recommended-news-section">
+          <div class="recommended-news">
+            <img
+              src="/assets/images/image-retro-pcs.jpg"
+              alt=""
+              class="recommened-news_image"
+            />
+            <div class="recommended-news_text">
+              <h2 class="news-number">01</h2>
+              <h3 class="recommened-news_heading">Reviving Retro PCs</h3>
+              <p class="recommened-news_sub-heading">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </div>
+          <div class="recommended-news">
+            <img
+              src="/assets/images/image-top-laptops.jpg"
+              alt=""
+              class="recommened-news_image"
+            />
+            <div class="recommended-news_text">
+              <h2 class="news-number">02</h2>
+              <h3 class="recommened-news_heading">Top 10 Laptops of 2022</h3>
+              <p class="recommened-news_sub-heading">
+                Our best picks for various needs and budgets.
+              </p>
+            </div>
+          </div>
+          <div class="recommended-news">
+            <img
+              src="/assets/images/image-gaming-growth.jpg"
+              alt=""
+              class="recommened-news_image"
+            />
+            <div class="recommended-news_text">
+              <h2 class="news-number">03</h2>
+              <h3 class="recommened-news_heading">The Growth of Gaming</h3>
+              <p class="recommened-news_sub-heading">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="overlay-menu" id="menu">
+        <button class="overlay-hambergermenu"></button>
+        <div class="overlay-navbar-links">
+          <a href="" class="overlay-navbar-link">Home</a>
+          <a href="" class="overlay-navbar-link">New</a>
+          <a href="" class="overlay-navbar-link">Popular</a>
+          <a href="" class="overlay-navbar-link">Trending</a>
+          <a href="" class="overlay-navbar-link">Catagories</a>
+        </div>
+      </div>
+    </main>
+    <script src="/index.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
